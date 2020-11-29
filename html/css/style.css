@@ -5889,8 +5889,22 @@ File: scss
 
 .login-card {
   position: relative;
-  width: 500px;
-  left: 25%;
-  top: 100px;
-  margin-bottom: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 90vh;
+  top: 8rem;
+  /*bottom: 5rem;*/
+}
+
+@media (max-width: 499px) {
+  .login-card {
+    /*left: 0;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .login-card-body {
+    padding: 20px 50px;
+  }
 }
