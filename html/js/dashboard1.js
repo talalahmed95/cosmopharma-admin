@@ -14,10 +14,9 @@ $(function() {
         bindto: '#visitor',
         data: {
             columns: [
-                ['Other', 30],
-                ['Desktop', 10],
-                ['Tablet', 40],
-                ['Mobile', 50],
+                ['Revenue', 10],
+                ['Purchase', 40],
+                ['Expense', 50],
             ],
 
             type: 'donut',
@@ -29,7 +28,7 @@ $(function() {
             label: {
                 show: false
             },
-            title: "Visits",
+            title: "Profit Figure",
             width: 20,
 
         },
@@ -40,7 +39,7 @@ $(function() {
             //or hide: ['data1', 'data2']
         },
         color: {
-            pattern: ['#eceff1', '#24d2b5', '#6772e5', '#20aee3']
+            pattern: ['#24d2b5', '#6772e5', '#20aee3']
         }
     });
     // ============================================================== 

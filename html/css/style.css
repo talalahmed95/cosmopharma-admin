@@ -2037,22 +2037,27 @@ Buttons
 
 .btn-success,
 .btn-success.disabled {
-  background: #24d2b5;
-  border: 1px solid #24d2b5;
+  /*background: #24d2b5;*/
+  background: linear-gradient(135deg, #37a0fe 30%, #8846fd 100%);
+  border-color: #37a0fe;
+  /*border: 1px solid #24d2b5;*/
   /*box-shadow: $success-shadow;*/
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
   .btn-success:hover,
   .btn-success.disabled:hover {
-    background: #24d2b5;
+    /*background: #24d2b5;*/
+    background: linear-gradient(135deg, #68adfa 30%, #9d69f9 100%);
+    border-color: #37a0fe;
     /*box-shadow: $success-shadow-hover;*/
-    border: 1px solid #24d2b5; }
+    /*border: 1px solid #24d2b5;*/
+  }
   .btn-success.active, .btn-success:active, .btn-success:focus,
   .btn-success.disabled.active,
   .btn-success.disabled:active,
   .btn-success.disabled:focus {
-    background: #04b381;
+    background: linear-gradient(135deg, #37a0fe 30%, #8846fd 100%);
     /*box-shadow: $success-shadow-hover;*/
     border-color: transparent; }
 
@@ -5907,4 +5912,38 @@ File: scss
   .login-card-body {
     padding: 20px 50px;
   }
+}
+
+/*
+@media (min-width: 800px) {
+  .login-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .login-card {
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .login-card {
+    width: 100%;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+}*/
+
+.footer {
+  text-align: center;
+}
+
+.hidden-md-down {
+    background: linear-gradient(135deg, #37a0fe 30%, #8846fd 100%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
