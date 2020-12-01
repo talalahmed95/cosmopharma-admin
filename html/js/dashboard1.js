@@ -190,38 +190,38 @@ $(function() {
     Morris.Area({
         element: 'sales-chart',
         data: [{
-                period: '2011',
+                period: '2014',
                 Sales: 50,
                 Earning: 80,
                 Marketing: 20
             }, {
-                period: '2012',
+                period: '2015',
                 Sales: 130,
                 Earning: 100,
                 Marketing: 80
             }, {
-                period: '2013',
+                period: '2016',
                 Sales: 80,
                 Earning: 60,
                 Marketing: 70
             }, {
-                period: '2014',
+                period: '2017',
                 Sales: 70,
                 Earning: 200,
                 Marketing: 140
             }, {
-                period: '2015',
+                period: '2018',
                 Sales: 180,
                 Earning: 150,
                 Marketing: 140
             }, {
-                period: '2016',
+                period: '2019',
                 Sales: 105,
                 Earning: 100,
                 Marketing: 80
             },
             {
-                period: '2017',
+                period: '2020',
                 Sales: 250,
                 Earning: 150,
                 Marketing: 200
@@ -229,7 +229,7 @@ $(function() {
         ],
         xkey: 'period',
         ykeys: ['Sales', 'Earning', 'Marketing'],
-        labels: ['Site A', 'Site B', 'Site C'],
+        labels: ['Nutraceutical Products', 'Food supliment', 'Multivitamin'],
         pointSize: 0,
         fillOpacity: 0,
         pointStrokeColors: ['#20aee3', '#24d2b5', '#6772e5'],
