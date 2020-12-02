@@ -5948,3 +5948,25 @@ File: scss
     padding: 10px;
     border-radius: 5px;
 }
+
+.latest5 {
+  background: linear-gradient(135deg, #37a0fe 30%, #8846fd 100%);
+    color: white;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+
+.completed-success {
+  background: #28a745;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+
+.pending-warning {
+  
+  background: #dc3545;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
