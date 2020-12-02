@@ -76,7 +76,7 @@
                         <div class="card">
                             <div class="card-body login-card-body">
                             	<h3 class="text-themecolor text-center">LOG IN</h3>
-                                <form class="form-horizontal form-material" action="index.html">
+                                <form class="form-horizontal form-material" method="POST">
 
 
                                 	<div class="form-group">
@@ -109,7 +109,7 @@
                                     
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <button class="btn btn-success">LOGIN</button>
+                                            <button class="btn btn-success" id="stopit" onclick="loginFunc(exampleRadios.value)">LOGIN</button>
                                         </div>
                                     </div>
                                 </form>
@@ -158,6 +158,22 @@
     <script src="../assets/node_modules/c3-master/c3.min.js"></script>
     <!-- Chart JS -->
     <script src="js/dashboard1.js"></script>
+
+    <script type="text/javascript">
+    	document.getElementById("stopit").addEventListener("click", function(event){
+		  event.preventDefault()
+		});
+
+		function loginFunc(exampleRadios) {
+		    console.log(exampleRadios);
+		    if(exampleRadios == 'option1') {
+		        window.location.replace("customer-register.html");            
+		    }
+		    else if(exampleRadios == 'option2') {
+		        window.location.replace("index.html");            
+		    }
+		}
+    </script>
 </body>
 
 </html>
