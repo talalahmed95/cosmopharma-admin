@@ -139,9 +139,9 @@
                                     class="hide-menu fa fa-angle-down float-right"></i></a>
                         
                             <ul id="dropdown-nav">
-                                <li> <a class="waves-effect waves-dark" href="category.html" aria-expanded="false"><span class="hide-menu">Category Controlling</span></a>
+                                <li> <a class="waves-effect waves-dark" href="category.html" aria-expanded="false"><span class="hide-menu">Category</span></a>
                                 </li>
-                                <li> <a class="waves-effect waves-dark" href="product.html" aria-expanded="false"><span class="hide-menu">Product Controlling</span></a>
+                                <li> <a class="waves-effect waves-dark" href="product.html" aria-expanded="false"><span class="hide-menu">Product</span></a>
                                 </li>
                                 <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Product</span></a>
                                 </li>
@@ -474,10 +474,10 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Sales</h3>
+                        <h3 class="text-themecolor">Invoice</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Sales</li>
+                            <li class="breadcrumb-item active">Invoice</li>
                         </ol>
                     </div>
                     <div class="col-md-7 align-self-center">
@@ -497,7 +497,7 @@
 
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModal">
-                  Add New Sale Details
+                  Add New Invoice
                 </button>
 
                 <!-- Modal -->
@@ -505,7 +505,7 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Add Sales</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Add Invoice</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -513,51 +513,54 @@
                       <div class="modal-body">
                         
                         <div class="form-group">
-                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Date">
+                            <label for="example-email" class="col-md-12">Customer Name/Phone</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="Walk-in Customer">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Reference">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Biller Name">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Customer Name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="example-email" class="col-md-12">Sale Status</label>
+                            <label for="example-email" class="col-md-12">Payment Type</label>
                             <select class="form-control form-control-line">
-                                <option>Completed</option>
-                                <option>Incomplete</option>
+                                <option>Cash</option>
+                                <option>Credit / Debit Card</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="example-email" class="col-md-12">Purchase Status</label>
-                            <select class="form-control form-control-line">
-                                <option>Paid</option>
-                                <option>Due</option>
-                            </select>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cash Amount / Credit / Debit Card Number">
                         </div>
 
                         <div class="form-group">
-                            <label for="example-email" class="col-md-12">Grand Total</label>
+                            <label for="example-email" class="col-md-12">Date</label>
+                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Medicine Name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Batch Number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="example-email" class="col-md-12">Quantity</label>
                             <input type="number" placeholder="1" class="form-control form-control-line" name="example-email" id="example-email">
                         </div>
 
                         <div class="form-group">
-                            <label for="example-email" class="col-md-12">Paid</label>
+                            <label for="example-email" class="col-md-12">Expiry Date</label>
+                            <input type="date" class="form-control form-control-line" name="example-email" id="example-email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="example-email" class="col-md-12">Price</label>
                             <input type="number" placeholder="1" class="form-control form-control-line" name="example-email" id="example-email">
                         </div>
 
                         <div class="form-group">
-                            <label for="example-email" class="col-md-12">Due</label>
+                            <label for="example-email" class="col-md-12">Discount</label>
                             <input type="number" placeholder="1" class="form-control form-control-line" name="example-email" id="example-email">
-                        </div>
+                        </div>                     
 
 
                       </div>
@@ -618,82 +621,52 @@
                                         <thead>
                                             <tr>
                                                 <th>S.No.</th>
+                                                <th>Invoice No.</th>
+                                                <th>Customer Name</th>
                                                 <th>Date</th>
-                                                <th>Reference</th>
-                                                <th>Biller</th>
-                                                <th>Customer</th>
-                                                <th>Sale Status</th>
-                                                <th>Payment Status</th>
-                                                <th>Grand Total</th>
-                                                <th>Paid</th>
-                                                <th>Due</th>
+                                                <th>Total Amount</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>25-08-2018</td>
-                                                <td>sr-20180826-094836</td>
+                                                <td>1035</td>
                                                 <td>Abdul Aziz</td>
-                                                <td>Ahmad Khan</td>
-                                                <td><button class="btn btn-info btn-sm">Completed</button></td>
-                                                <td><button class="btn btn-danger btn-sm">Due</button></td>
-                                                <td>525.70</td>
-                                                <td>500</td>
-                                                <td>25.70</td>
+                                                <td>25-08-2018</td>
+                                                <td>PKR 4500</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>25-08-2018</td>
-                                                <td>sr-20180826-094836</td>
+                                                <td>1035</td>
                                                 <td>Abdul Aziz</td>
-                                                <td>Ahmad Khan</td>
-                                                <td><button class="btn btn-info btn-sm">Completed</button></td>
-                                                <td><button class="btn btn-danger btn-sm">Due</button></td>
-                                                <td>525.70</td>
-                                                <td>500</td>
-                                                <td>25.70</td>
+                                                <td>25-08-2018</td>
+                                                <td>PKR 4500</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>25-08-2018</td>
-                                                <td>sr-20180826-094836</td>
+                                                <td>1035</td>
                                                 <td>Abdul Aziz</td>
-                                                <td>Ahmad Khan</td>
-                                                <td><button class="btn btn-info btn-sm">Completed</button></td>
-                                                <td><button class="btn btn-danger btn-sm">Due</button></td>
-                                                <td>525.70</td>
-                                                <td>500</td>
-                                                <td>25.70</td>
+                                                <td>25-08-2018</td>
+                                                <td>PKR 4500</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>25-08-2018</td>
-                                                <td>sr-20180826-094836</td>
+                                                <td>1035</td>
                                                 <td>Abdul Aziz</td>
-                                                <td>Ahmad Khan</td>
-                                                <td><button class="btn btn-info btn-sm">Completed</button></td>
-                                                <td><button class="btn btn-danger btn-sm">Due</button></td>
-                                                <td>525.70</td>
-                                                <td>500</td>
-                                                <td>25.70</td>
+                                                <td>25-08-2018</td>
+                                                <td>PKR 4500</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
-                                                <td>25-08-2018</td>
-                                                <td>sr-20180826-094836</td>
+                                                <td>1035</td>
                                                 <td>Abdul Aziz</td>
-                                                <td>Ahmad Khan</td>
-                                                <td><button class="btn btn-info btn-sm">Completed</button></td>
-                                                <td><button class="btn btn-danger btn-sm">Due</button></td>
-                                                <td>525.70</td>
-                                                <td>500</td>
-                                                <td>25.70</td>
+                                                <td>25-08-2018</td>
+                                                <td>PKR 4500</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                         </tbody>
