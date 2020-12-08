@@ -474,10 +474,10 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Category</h3>
+                        <h3 class="text-themecolor">Product</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Category</li>
+                            <li class="breadcrumb-item active">Product</li>
                         </ol>
                     </div>
                     <div class="col-md-7 align-self-center">
@@ -497,7 +497,7 @@
 
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModal">
-                  Add Category
+                  Add Product
                 </button>
 
                 <!-- Modal -->
@@ -505,17 +505,56 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
+                        
                         <div class="form-group">
-                            <!-- <label for="exampleInputEmail1">Email address</label> -->
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Category Name">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Medicine Name">
                         </div>
-                        <!-- <input type="text" placeholder="Category Name"> -->
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Generic Name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Manufacturer">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="example-email" class="col-md-12">Category</label>
+                            <select class="form-control form-control-line">
+                                <option>Tablet</option>
+                                <option>Capsule</option>
+                                <option>Suspension</option>
+                                <option>Cream</option>
+                                <option>Injection</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Shelf">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="example-email" class="col-md-12">Sell Price</label>
+                            <input type="number" placeholder="1" class="form-control form-control-line" name="example-email" id="example-email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="example-email" class="col-md-12">Purchase Price</label>
+                            <input type="number" placeholder="1" class="form-control form-control-line" name="example-email" id="example-email">
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Strength">
+                        </div>
+
+
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -573,47 +612,77 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
+                                                <th>S.No.</th>
+                                                <th>Medicine Name</th>
+                                                <th>Generic Name</th>
+                                                <th>Manufacturer</th>
                                                 <th>Category</th>
-                                                <th>Number of Product</th>
-                                                <th>Stock Quantity</th>
-                                                <th>Stock Worth (Price/Cost)</th>
+                                                <th>Shelf</th>
+                                                <th>Sell Price</th>
+                                                <th>Purchase Price</th>
+                                                <th>Strength</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Capsule</td>
-                                                <td>12</td>
-                                                <td>50</td>
-                                                <td>117000 Pkr / 64000 Pkr</td>
-                                                <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
-                                            </tr>
-                                            <tr>
+                                                <td>1</td>
+                                                <td>Abon 42(500 mg + 200 IU)</td>
+                                                <td>Calcium + Vitamin D3</td>
                                                 <td>Tablet</td>
-                                                <td>29</td>
-                                                <td>50</td>
-                                                <td>146000 Pkr / 81000 Pkr</td>
+                                                <td>Abbott</td>
+                                                <td>A-14</td>
+                                                <td>465.50</td>
+                                                <td>525.70</td>
+                                                <td>500 mg + 200 IU</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Suspension</td>
-                                                <td>35</td>
-                                                <td>50</td>
-                                                <td>117000 Pkr / 64000 Pkr</td>
+                                                <td>2</td>
+                                                <td>Abon 42(500 mg + 200 IU)</td>
+                                                <td>Calcium + Vitamin D3</td>
+                                                <td>Tablet</td>
+                                                <td>Abbott</td>
+                                                <td>A-14</td>
+                                                <td>465.50</td>
+                                                <td>525.70</td>
+                                                <td>500 mg + 200 IU</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Cream</td>
-                                                <td>39</td>
-                                                <td>50</td>
-                                                <td>146000 Pkr / 81000 Pkr</td>
+                                                <td>3</td>
+                                                <td>Abon 42(500 mg + 200 IU)</td>
+                                                <td>Calcium + Vitamin D3</td>
+                                                <td>Tablet</td>
+                                                <td>Abbott</td>
+                                                <td>A-14</td>
+                                                <td>465.50</td>
+                                                <td>525.70</td>
+                                                <td>500 mg + 200 IU</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Injection</td>
-                                                <td>15</td>
-                                                <td>50</td>
-                                                <td>117000 Pkr / 64000 Pkr</td>
+                                                <td>4</td>
+                                                <td>Abon 42(500 mg + 200 IU)</td>
+                                                <td>Calcium + Vitamin D3</td>
+                                                <td>Tablet</td>
+                                                <td>Abbott</td>
+                                                <td>A-14</td>
+                                                <td>465.50</td>
+                                                <td>525.70</td>
+                                                <td>500 mg + 200 IU</td>
+                                                <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Abon 42(500 mg + 200 IU)</td>
+                                                <td>Calcium + Vitamin D3</td>
+                                                <td>Tablet</td>
+                                                <td>Abbott</td>
+                                                <td>A-14</td>
+                                                <td>465.50</td>
+                                                <td>525.70</td>
+                                                <td>500 mg + 200 IU</td>
                                                 <td><button class="btn btn-info btn-sm">Edit</button> <button class="btn btn-danger btn-sm">Delete</button></td>
                                             </tr>
                                         </tbody>
