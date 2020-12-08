@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, AdminWrap lite design, AdminWrap lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="AdminWrap Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>COSMO PHARMA Admin</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/adminwrap-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- This page CSS -->
+    <!-- chartist CSS -->
+    <link href="../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+    <!--c3 CSS -->
+    <link href="../assets/node_modules/c3-master/c3.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Dashboard 1 Page CSS -->
+    <link href="css/pages/dashboard1.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Loading</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo.png" alt="homepage" class="dark-logo"  style="width: 50px;"/>
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo.jpg" alt="homepage" class="dark-logo" style="width: 180px;" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="fa fa-bars"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item hidden-xs-down search-box"> <a
+                                class="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0)"><i
+                                    class="fa fa-search"></i></a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search & enter"> <a
+                                    class="srh-btn"><i class="fa fa-times"></i></a></form>
+                        </li>
+                    </ul>
+
+                    <!-- <img src="../assets/images/logo.jpg" alt="homepage" class="dark-logo" style="width: 180px;" /> -->
+
+
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown u-pro">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="login.html" aria-haspopup="true" aria-expanded="false"><span
+                                    class="hidden-md-down logout-btn">&nbsp; Logout &nbsp;</span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- <h3>General</h3> -->
+                        <li> <a class="waves-effect waves-dark" href="index.html" aria-expanded="false"><i
+                                    class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a>
+                        </li>
+
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-list"></i><span class="hide-menu">Controlling</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="category.html" aria-expanded="false"><span class="hide-menu">Category</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="product.html" aria-expanded="false"><span class="hide-menu">Product</span></a>
+                                </li>
+                                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Product</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Print Barcode</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Adjustment List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Adjustment</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Stock Count</span></a>
+                                </li> -->
+                            </ul>
+                        </li>
+
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-credit-card"></i><span class="hide-menu">Materials Management</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="purchase.html" aria-expanded="false"><span class="hide-menu">Purchases List</span></a>
+                                </li>
+                                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Purchase</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Import Purchase By CSV</span></a>
+                                </li> -->
+                            </ul>
+                        </li>
+
+
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-shopping-cart"></i><span class="hide-menu">Sales & Distribution</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="sale.html" aria-expanded="false"><span class="hide-menu">Sale List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="invoice.html" aria-expanded="false"><span class="hide-menu">Invoice</span></a>
+                                </li>
+                                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Sale</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Import Sale By CSV</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Gift Card List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Coupon List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Delivery List</span></a>
+                                </li> -->
+                            </ul>
+                        </li>
+
+
+
+                        <!-- <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-briefcase"></i><span class="hide-menu">Expense</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Expense Category</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Expense List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Expense</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-book"></i><span class="hide-menu">Quotation</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Quotation List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Quotation</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-external-link"></i><span class="hide-menu">Transfer</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Transfer List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Transfer</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Import Transfer By CSV</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-archive"></i><span class="hide-menu">Return</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Sale</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Purchase</span></a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+
+                        
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-money"></i><span class="hide-menu">Financial & Accounting Control</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="account.html" aria-expanded="false"><span class="hide-menu">Account List</span></a>
+                                </li>
+                                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Account</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Money Transfer</span></a>
+                                </li> -->
+                                <li> <a class="waves-effect waves-dark" href="balancesheet.html" aria-expanded="false"><span class="hide-menu">Balance Sheet</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="accstatement.html" aria-expanded="false"><span class="hide-menu">Account Statement</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-users"></i><span class="hide-menu">Human Capital Management</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Department</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Employee</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Attendance</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Payroll</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Holiday</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <!-- <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-user"></i><span class="hide-menu">People</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">User List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add User</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Customer List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Customer</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Biller List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Biller</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Supplier List</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Add Supplier</span></a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+
+
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-file-text-o"></i><span class="hide-menu">Reporting</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <li> <a class="waves-effect waves-dark" href="daily-report.html" aria-expanded="false"><span class="hide-menu">Daily Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="weekly-report.html" aria-expanded="false"><span class="hide-menu">Weekly Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="monthly-report.html" aria-expanded="false"><span class="hide-menu">Monthly Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="quarter-report.html" aria-expanded="false"><span class="hide-menu">Quarter Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="annual-report.html" aria-expanded="false"><span class="hide-menu">Annual Report</span></a>
+                                </li>
+                                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Summary Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Best Seller</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Product Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Daily Sale</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Daily Purchase</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Monthly Purchase</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Sale Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Payment Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Purchase Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Warehouse Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Warehouse Stock Chart</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Product Quantity Alert</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">User Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Customer Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Supplier Report</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Due Report</span></a>
+                                </li> -->
+                            </ul>
+                        </li>
+
+                        <li> <a class="waves-effect waves-dark" href="todo.html" aria-expanded="false"><i class="fa fa-list"></i><span class="hide-menu">To-Do Tasks</span></a>
+                        </li>
+
+
+                        <li> <a class="waves-effect waves-dark" data-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa fa-cogs"></i><span class="hide-menu">Settings</span><i
+                                    class="hide-menu fa fa-angle-down float-right"></i></a>
+                        
+                            <ul id="dropdown-nav">
+                                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Role Permission</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Warehouse</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Customer Group</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Brand</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Unit</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Tax</span></a>
+                                </li> -->
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">User Profile</span></a>
+                                </li>
+                                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Create SMS</span></a>
+                                </li> -->
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">General Setting</span></a>
+                                </li>
+                                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Mail Setting</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">SMS Setting</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">POS Setting</span></a>
+                                </li>
+                                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">HRM Setting</span></a>
+                                </li> -->
+                            </ul>
+                        </li>
+
+                        <!-- <li> <a class="waves-effect waves-dark" href="icon-fontawesome.html" aria-expanded="false"><i
+                                    class="fa fa-smile-o"></i><span class="hide-menu">Icons</span></a>
+                        </li> -->
+                        <!-- <li> <a class="waves-effect waves-dark" href="map-google.html" aria-expanded="false"><i
+                                    class="fa fa-globe"></i><span class="hide-menu">Map</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="pages-blank.html" aria-expanded="false"><i
+                                    class="fa fa-user-circle"></i><span class="hide-menu">Admin</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="pages-blank.html" aria-expanded="false"><i
+                            class="fa fa-user-md"></i><span class="hide-menu">Staff</span></a>
+                </li>
+                <li> <a class="waves-effect waves-dark" href="pages-blank.html" aria-expanded="false"><i
+                    class="fa fa-user-o"></i><span class="hide-menu">Worker</span></a>
+        </li>
+        <li> <a class="waves-effect waves-dark" href="pages-blank.html" aria-expanded="false"><i
+            class="fa fa-indent"></i><span class="hide-menu">User List</span></a>
+</li> -->
+<hr>
+<!-- <h3>Extra</h3> -->
+
+<li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i
+    class="fa fa-cog"></i><span class="hide-menu">Manufacturing & Planning</span></a>
+</li>
+<!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i
+    class="fa fa-cog"></i><span class="hide-menu">Materials Management</span></a>
+</li> -->
+
+<li> <a class="waves-effect " href="#" aria-expanded="false"><i
+    class="fa fa-cog"></i><span class="hide-menu">Quality Management</span></a>
+</li>
+<li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i
+    class="fa fa-cog"></i><span class="hide-menu">CRM</span></a>
+</li>
+<li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i
+    class="fa fa-cog"></i><span class="hide-menu">RND</span></a>
+</li>
+
+<li> <a class="waves-effect " href="#" aria-expanded="false"><i
+    class="fa fa-cog"></i><span class="hide-menu">BI</span></a>
+</li>
+
+<li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i
+    class="fa fa-cog"></i><span class="hide-menu">SOPs / Consultancy</span></a>
+</li>
+
+
+                        <!-- <li> <a class="waves-effect waves-dark" href="pages-error-404.html" aria-expanded="false"><i
+                                    class="fa fa-question-circle"></i><span class="hide-menu">404</span></a>
+                        </li> -->
+                    </ul>
+                    <div class="text-center m-t-30">
+                        <!-- <a href="https://wrappixel.com/templates/adminwrap/"
+                            class="btn waves-effect waves-light btn-info hidden-md-down"> Upgrade to Pro</a> -->
+                    </div>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">Quarter Report</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Quarter Report</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <!-- <a href="https://wrappixel.com/templates/adminwrap/"
+                            class="btn waves-effect waves-light btn btn-info pull-right hidden-sm-down"> Upgrade to
+                            Pro</a> -->
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Sales Chart and browser state-->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Purchase</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Amount <span class="float-right"> 17254791.50</span></p>
+									<p class="mt-2">Purchase <span class="float-right">62</span></p>
+									<p class="mt-2">Paid <span class="float-right">16926429.50</span></p>
+									<p class="mt-2">Tax <span class="float-right">39676.37</span></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Sale</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Amount <span class="float-right"> 2065175.80</span></p>
+									<p class="mt-2">Sale <span class="float-right">135</span></p>
+									<p class="mt-2">Paid <span class="float-right">2039174.50</span></p>
+									<p class="mt-2">Tax <span class="float-right">28244.48</span></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Sale Return</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Amount <span class="float-right"> 351878.00</span></p>
+									<p class="mt-2">Return <span class="float-right">6</span></p>
+									<p class="mt-2">Tax <span class="float-right">144.00</span></p>
+									<p class="pb-3"></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Purchase Return</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Amount <span class="float-right"> 200.00</span></p>
+									<p class="mt-2">Return <span class="float-right">1</span></p>
+									<p class="mt-2">Tax <span class="float-right">0.00</span></p>
+									<p class="pb-3"></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Profit / Loss</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Sale <span class="float-right">2065175.80</span></p>
+									<p class="mt-2">Purchase <span class="float-right">- 17254791.50</span></p>
+									<p class="mt-2">Sale Return <span class="float-right">- 351878.00</span></p>
+									<p class="mt-2">Purchase Return <span class="float-right"> 200.00</span></p>
+									<p class="mt-2">Profit <span class="float-right"> -15541293.70</span></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Net Profit / Net Loss</h3>
+								<hr>
+								<h4 class="text-center">-15529717.81</h4>
+								<p class="text-center">
+									(Sale 2065175.80 - Tax 28244.48) - (Purchase 17254791.50 - Tax 39676.37) - (Return 351878.00 - Tax 144.00) + (Purchase Return 200.00 - Tax 0.00)
+								</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Payment Received</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Amount <span class="float-right"> 2039177.50</span></p>
+									<p class="mt-2">Received <span class="float-right">123</span></p>
+									<p class="mt-2">Cash <span class="float-right">2012812.50</span></p>
+									<p class="mt-2">Cheque <span class="float-right">7697.00</span></p>
+									<p class="mt-2">Credit Card <span class="float-right">18128.00</span></p>
+									<p class="mt-2">Gift Card <span class="float-right">500.00</span></p>
+									<p class="mt-2">Paypal <span class="float-right">0.00</span></p>
+									<p class="mt-2">Deposit <span class="float-right">40.00</span></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Payment Sent</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Amount <span class="float-right"> 16926429.50</span></p>
+									<p class="mt-2">Received <span class="float-right">49</span></p>
+									<p class="mt-2">Cash <span class="float-right">16919429.50</span></p>
+									<p class="mt-2">Cheque <span class="float-right">7000.00</span></p>
+									<p class="mt-2">Credit Card <span class="float-right">0.00</span></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Expense</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Amount <span class="float-right"> 581810.00</span></p>
+									<p class="mt-2">Expense <span class="float-right">28</span></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+								<h3>Payroll</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Amount <span class="float-right"> 33100.00</span></p>
+									<p class="mt-2">Payroll <span class="float-right">4</span></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Cash in Hand</h3>
+								<hr>
+								<div class="mt-3">
+									<p class="mt-2">Received <span class="float-right"> 2039177.50</span></p>
+									<p class="mt-2">Sent <span class="float-right">- 16926429.50</span></p>
+									<p class="mt-2">Sale Return <span class="float-right">- 351878.00</span></p>
+									<p class="mt-2">Purchase Return <span class="float-right"> 200.00</span></p>
+									<p class="mt-2">Expense <span class="float-right">- 581810.00</span></p>
+									<p class="mt-2">Payroll <span class="float-right">- 33100.00</span></p>
+									<p class="mt-2">In Hand <span class="float-right">-15853840.00</span></p>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+								<h3>Warehouse Figures</h3>
+								<h4 class="text-center mt-3">-13232597.70</h4>
+								<p class="text-center">
+									Sale 1092304.80 - Purchase 13973518.50 - Sale Return 351584.00 + Purchase Return 200.00
+								</p>
+								<hr style="border-color: rgba(0, 0, 0, 0.2);">
+								<h4 class="text-center">-13232979.05</h4>
+								<p class="text-center">
+									 Net Sale 1076322.78 -  Net Purchase 13958061.83 - Net Sale Return 351440.00 + Net Purchase Return 200.00
+								</p>
+								<hr style="border-color: rgba(0, 0, 0, 0.2);">
+								<h4 class="text-center">525910.00</h4>
+								<p class="text-center">Expense</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Notification And Feeds -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- End Page Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © <script>document.write(new Date().getFullYear());</script> COSMO PHARMA</footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/node_modules/jquery/jquery.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="../assets/node_modules/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/node_modules/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--morris JavaScript -->
+    <script src="../assets/node_modules/raphael/raphael-min.js"></script>
+    <script src="../assets/node_modules/morrisjs/morris.min.js"></script>
+    <!--c3 JavaScript -->
+    <script src="../assets/node_modules/d3/d3.min.js"></script>
+    <script src="../assets/node_modules/c3-master/c3.min.js"></script>
+    <!-- Chart JS -->
+    <script src="js/dashboard1.js"></script>
+</body>
+
+</html>
